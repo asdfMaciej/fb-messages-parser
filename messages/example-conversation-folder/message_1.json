@@ -1,0 +1,46 @@
+{
+  "participants": [
+    {
+      "name": "Example User"
+    },
+    {
+      "name": "Maciej Kaszkowiak"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Maciej Kaszkowiak",
+      "timestamp_ms": 1570724698103,
+      "content": "Seems like it.",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Example User",
+      "timestamp_ms": 1570724689862,
+      "content": "Indeed, it does!",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Maciej Kaszkowiak",
+      "timestamp_ms": 1481544728979,
+      "content": "Does it?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Maciej Kaszkowiak",
+      "timestamp_ms": 1481544723044,
+      "content": "This appears to be a github.com/asdfMaciej repo",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Maciej Kaszkowiak",
+      "timestamp_ms": 1474708662340,
+      "content": "Hello!",
+      "type": "Generic"
+    }
+  ],
+  "title": "Example User",
+  "is_still_participant": true,
+  "thread_type": "Regular",
+  "thread_path": "inbox/Examplepath"
+}

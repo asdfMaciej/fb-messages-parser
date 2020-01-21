@@ -1,0 +1,53 @@
+- json has really funky encoding
+
+- message has 4 types:
+* Generic
+	message/video/photo, etc, usual stuff
+* Share
+	determining this right now, but seems to be the shared boxes from apps for ex
+* Unsubscribe
+	person is removed from a group
+* Subscribe
+	person is added to a group
+
+message format: generic/share
+{
+
+always occur:
+	* type
+	* sender_name
+	* timestamp_ms
+
+not always for share:
+it doesn't occur when there's a link shared
+when someone waves to the group
+when there's a game invite
+when there's an attachement
+content property is quite descriptive tho, always a string
+	* share : {
+		* link
+		* share_text
+
+		both might occur at the same time, rare
+	}
+
+	* reactions: [
+		{	
+			reaction
+			author
+		}, ...
+	]
+
+	* sticker:
+	* photos:
+	* content
+	* videos:
+	* files:
+	* audio_files
+	* gifs
+
+	when none of the above, it most likely was deleted
+	
+}
+
+- store datetime as epoch in sqlite, then use SELECT datetime(<epoch>, 'unixepoch', 'localtime');
